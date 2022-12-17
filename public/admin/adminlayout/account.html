@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/admin/admincss/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trang quản lý tài khoảng</title>
+</head>
+<body>
+    <div class="container__admin">
+        <div class="sidebar vh-100 ">
+            <div class="toggle--icon">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="logo">
+                <img src="/public/image/logo.png" alt="Music Life">
+            </div>
+            <nav>
+                <div class="nav-title">
+                    Management
+                </div>
+                <div class="sub__nav-title">
+                    <div class="nav-item">
+                        <a href="http://">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="nav-sub_item">Trang Chủ</span>
+                        </a>
+                    </div>
+                    <div  class="nav-item active">
+                        <a  href="http://">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="nav-sub_item">Tài khoản</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="http://">
+                            <i class="fa-solid fa-music"></i>
+                            <span class="nav-sub_item">Bài Hát</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="http://">
+                            <i class="fa-solid fa-user-secret"></i>
+                            <span class="nav-sub_item">Ca Sĩ</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="content">
+            <div class="direct">
+                <a href="http://">Admin</a>>              <a href="http://">Admin</a>
+            </div>
+                <h1 class="text-center mt-4">Danh Sách Tài khoản</h2>
+            <div class="account">
+                <button class="btn "><a href="http://">Thêm tài khoản</a></button>
+                <button class="btn "><a href="http://">Tìm Kiếm tài khoản</a></button>
+            </div>
+            <table class="table text-white table-striped">
+              <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>UserName</th>
+                    <th>Tên</th>
+                    <th>Level</th>
+                    <th colspan="2">Operation</th>
+                   </tr>
+              </thead>
+               <tbody>
+                <tr>
+                    <td>#1</td>
+                    <td>phamhoainamvv</td>
+                    <td class="user-fullname text-capitalize">Phạm hoài Nam</td>
+                    <td class="permission"><button class="btn member">member</button></td>
+                    <td><a href=""><i class="fa-solid fa-pen-to-square"></i></a></td>
+                    <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td>phamhoainamvv</td>
+                    <td class="user-fullname text-capitalize">Phạm hoài Nam</td>
+                    <td class="permission"><button class="btn member">member</button></td>
+                    <td><a href=""><i class="fa-solid fa-pen-to-square"></i></a></td>
+                    <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td>phamhoainamvv</td>
+                    <td class="user-fullname text-capitalize">Phạm hoài Nam</td>
+                    <td class="permission"><button class="btn admin">admin</button></td>
+                    <td><a href=""><i class="fa-solid fa-pen-to-square"></i></a></td>
+                    <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                </tr>
+               </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const $$ = document.querySelector.bind(document);
+    const $$l = document.querySelector.bind(document);
+ 
+    // Toggle Menu 
+    (function () {
+        const sidebar = $$(".sidebar");
+        const toggle_open_menu = $$(".toggle--icon");
+        toggle_open_menu.onclick = () => {
+            sidebar.classList.toggle('open');
+            if (sidebar.className.includes("open")) {
+                toggle_open_menu.innerHTML = `<i class="fa-solid fa-angle-right"></i>`;
+            } else {
+                toggle_open_menu.innerHTML = `<i class="fa-solid fa-angle-left"></i>`;
+            }
+        }
+    })();
+        
+</script>
+
+</html>
