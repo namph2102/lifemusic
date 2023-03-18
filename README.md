@@ -1,6 +1,6 @@
 # Website nghe nhạc : https://lifemusic.website/
 * FE: HTML, CSS , JavaScript
-*BE : Mysql, PHP Laravel
+* BE : Mysql, PHP Laravel
 + Pages Client
     - Home :![image](https://user-images.githubusercontent.com/107352059/226118429-38a72939-4a5b-4023-bf08-72f3f739ed58.png)
     - Artists:![image](https://user-images.githubusercontent.com/107352059/226118448-c74257bd-28d7-4782-aec0-35da8b663857.png)
